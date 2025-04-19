@@ -32,4 +32,4 @@ print("Energy: " + "♦" * energy)
 # Displaying shield using diamond symbols
 print("Shield: " + "♦" * shield)
 
-# Code completed
+# Code completed ,
