@@ -1,29 +1,35 @@
-# This program calculates BMI (Body Mass Index)
+# This program will display a game health status using symbols
 
-# Asking the user for their name
-print("What is your name?")
-name = input()  # input() gets text from the user
+# Asking the user for number of lives
+print("Please enter the number of lives.")
+lives = int(input())  # Convert input to a whole number
+print(" ")  # Printing a empty line for space
 
-# Asking for age and convert it to number
-print("How old are you (in years)?")
-age = int(input())  # int() changes text to a number
+# Asking the user to input energy levels
+print("Please enter the energy level.")
+energy = int(input())  # Converting input to a whole number
+print(" ")  # Printing an empty line for space
 
-# Asking for height and convert it to decimal number
-print("How tall are you (in meters)?")
-height = float(input())  # float() changes text to decimal number
+# Asking the user what is their shield level
+print("Please enter the shield level.")
+shield = int(input())  # Converting input to a whole number
+print(" ")  # Printing an empty line for space
 
-# Asking for weight and convert it to decimal number
-print("How much do you weigh (in kilograms)?")
-weight = float(input())
+# Letting the user know the health has been set
+print("Health has been set.")
+print(" ")  # Printing an empty line for space
 
-# Calculate BMI using the formula: weight divided by height squared
-# The ** symbol means "to the power of" - so height ** 2 is height squared
-bmi = weight / (height ** 2)
+# Creating the health display using string operators
+# The * operator repeats a string a specified number of times
+# Example: "♥" * 3 creates "♥♥♥"
 
-# Making the BMI show only one decimal place
+# Displaying lives using heart symbols
+print("Lives:  " + "♥" * lives)
 
-formatted_bmi = "{:.1f}".format(bmi)
+# Displaying energy using diamond symbols
+print("Energy: " + "♦" * energy)
 
-# Showing the final result with the person information
-print(f"{name} you are {age} years old and your bmi is {formatted_bmi}.")
+# Displaying shield using diamond symbols
+print("Shield: " + "♦" * shield)
 
+# Code completed
