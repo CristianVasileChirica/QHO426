@@ -1,18 +1,18 @@
-# The program asks about what book types and responds to adventure books
+# This program will ask what activity to perform and responds accordingly
+# It shows how to use IF...ELSE statement
 
-# An IF statement is used to make a decision based on the boo type
+#Asking the user for the activity they want to perform
+print("Please enter the activity you want to perform.")
+activity = input () # storing the user input in a variable
+print("") # Add an empty line to be more readable
 
-# Asking the User for the type of book
-print("What type of book is this?!")
-book_type = input() # Getting the book type from the user and store it in a variable
-print("") # Adding an empty line to be better readable
+# Check what activity was entered
+# IF...ELSE lets us handle two different situations
+if activity == "calculate": # If the activity is exactly "calculate"
+    print("Performing calculations...") # This will run when activity is "calculate"
+else:
+    print("Performing activity...") # This will run when activity is anyrhing else
 
-# Checking if the book is an adventure one
-# The IF statement will check a condition and tuns the code if the condition id True
-if book_type == "Adventure": # The == mens is equal to
-    print("I like Adventure books!") # This line will only run if book_type is "Adventure"
-    print("") # Another empty line for better readability
-
-# This code is not indented, i will run regardless of the book type
-print("Finished reading book!")
-print("") # Empty line for better readability
+print(" ") # Add an empty line for better readability
+print("Activity completed!") # This always runs, no matter what activity was
+print("") # Add an empty line for better readability
