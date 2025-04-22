@@ -42,5 +42,5 @@ else:
     # This will run if the input user uses doesn't match any of the above
     print(" I do not understand the direction!")
 
-    # Empty line
+    # Empty line added
     print("")
