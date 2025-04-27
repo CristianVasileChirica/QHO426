@@ -27,4 +27,4 @@ elif (adventure_type == "safe") or (adventure_type == "long"):
 else:
     # This code will run if the adventure is not scary, short, safe , or long
     print("Not sure which route to take.")
-
+    print("")
