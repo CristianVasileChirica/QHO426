@@ -22,3 +22,5 @@ if (sound == "grrr") and (sight == "two red eyes"):
 else:
     # This runs if any condition is false
     print("I am a little scared but i will continue.")
+    print("")
+
