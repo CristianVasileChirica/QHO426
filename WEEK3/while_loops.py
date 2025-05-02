@@ -1,34 +1,33 @@
-# Here we are making a robot avoid obstacles using while loops
+# This is a Battery Charging Simulator
+# This program is showing a battery charging with ASCII asrt
+# I have learned that while loops are good for repeating actions until a condition will be met!
 
-# First i need to ask the user how many obstacles to avoid
-print  ("How many obstacles should i avoid? ")
+# First, let's ask the user to how many charging bars they want
+print("How many bars should be charged?")
+max_bars = int(input()) # Converting the user inout to a No
+print(" ")  # Adding a blank line to make the output look cleaner
 
-  #Here we are getting the input from the user and converted it to a number
-obstacle_to_avoid = int(input())
+# Creating a variable to keep track of how many bars are charged
+# Starting with 0 since the battery hasn't started charging yet
+charged_bars = 0
 
-  # Adding a blank line to make the output look cleaner
-print("")
+# The special character  █ ( Got this from solent page task)
+# This Looks cooler than just using regular characters!
+bar_symbol = "█"
 
- # Setting up a counter to keep a track of how many obstacles we've avoided
- # It starts at 0 because we haven't avoided any yet
-obstacles_avoided = 0
+# The while loop will run until we have changed all the bars the user asked for
+while charged_bars < max_bars:
+    # Adding one more bar each time through the loop
+    charged_bars = charged_bars + 1 #
 
-#Now we are using the while loop to run until we've avoided all obstacles
-while obstacles_avoided < obstacle_to_avoid:
-    # First print "Avoiding..." but don't go to next line because end=""
-    print("Avoiding...", end="")
+    # Creating the chargind display - Will make it show all bars charged so far
+    charging_display = ""
+    for i in range(charged_bars):
+        charging_display = charging_display + bar_symbol + " "
 
-#Increase our counter by 1 since we're avoiding an obstacle now
-    obstacles_avoided = obstacles_avoided + 1
+        # Showing the current charging status
+        print("Charging:", charging_display)
 
-#This f-String lets you put variable right in the text
-    print(f" Done! {obstacles_avoided} obstacles avoided.")
-
-#Adding another blank line to separate the final message
-print("")
-
-# Let the user know we're all done!
-print("All obstacles have been avoided.")
-
-   #I added a little extra message to make my program special
-print("Robot safety protocol complete!")
+        # When the loop is done, the battery is fully charged
+        print("\nThe battery is fully charged.")
+        print(" ")
