@@ -16,4 +16,4 @@ while times_printed < character_count:
     print("Hi", end="")
     times_printed = times_printed + 1
 
-print() # New line at the end
+print() # New line at the end 
