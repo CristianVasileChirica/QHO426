@@ -39,3 +39,4 @@ for mountain in range(mountain_number):
     # Telling the user we are done
     print("Done!")
 
+    print(" ")
