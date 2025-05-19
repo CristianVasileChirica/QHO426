@@ -10,5 +10,5 @@ def listen():
     print("That was a loud", sound + "!")  # we use + "!" to make it exciting
 
 
-# Call to function
+# Call function
 listen()  # without this line, the function won’t actually run when the program starts
