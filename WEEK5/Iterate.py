@@ -59,5 +59,5 @@ def menu():
 def run_task3():
     menu()  # Simply call the menu function
 
-# Now, we can call run_task3() to test the output
+# Now we can call run_task3() to test the output
 run_task3()
