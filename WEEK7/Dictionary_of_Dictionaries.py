@@ -34,7 +34,7 @@ def long_pattern():
 # This function runs the task: creating and displaying a dictionary of dictionaries
 def run_task3():
     # Display a message to indicate that pattern analysis is starting
-    print("Analysing patterns...")
+    print("Analysing the patterns...")
     print("")  # For spacing
 
     # Create the main dictionary with nested dictionaries as values
