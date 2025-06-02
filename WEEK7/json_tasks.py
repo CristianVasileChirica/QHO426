@@ -19,7 +19,7 @@ def read(file_path):
         # Loop through each bot in the data and display its stats
         bots = data["bots"]
         for bot in bots:
-            name = bot["name"]
+            name = bot["names"]
             stats = bot["stats"]
             # Display the bot's name and stats in a clear format
             print(f"{name} has a strength level of {stats['strength']} and a speed level of {stats['speed']}.")
