@@ -19,4 +19,9 @@ def run_task1():
     y_values = [1, 4, 9, 16, 25]
 
     # Call the display_line function with the x and y values
-    display
+    display_line(x_values, y_values)
+
+
+# This ensures the program runs only if this file is executed directly
+if __name__ == "__main__":
+    run_task1()
