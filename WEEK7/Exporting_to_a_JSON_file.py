@@ -34,7 +34,7 @@ def save(file_path, data):
 
 # This function runs the export task by reading and then saving the data
 def run_task2():
-    # Call read_task2 with "futurama.json" and store the data in json_data
+    # Calls read_task2 with "futurama.json" and store the data in json_data
     json_data = read_task2("futurama.json")
 
     # Call save with "exported.json" and the data to be saved
